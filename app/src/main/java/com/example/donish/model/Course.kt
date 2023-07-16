@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class Course(
     @PrimaryKey(autoGenerate = true)
-    val courseId : Int = 0,
+    var courseId : Int = 0,
     val title : String,
     val description: String,
     val price : Double,

@@ -1,7 +1,7 @@
-package com.example.donish.model.relations
+package com.example.donish.model
 
 import androidx.room.Entity
-import java.text.DateFormat
+import java.sql.Date
 
 
 // Student and Course cross reference
@@ -12,10 +12,10 @@ import java.text.DateFormat
  * ------
  * M - to - M Relationship
  * */
-@Entity(primaryKeys = ["studentId","courseID"])
+@Entity(primaryKeys = ["studentId","courseId"])
 data class Enrollments(
     var studentId : Int,
-    var courseID : Int,
-    var dateRegistered : DateFormat,
-    var price : Double
+    val courseId : Int,
+    val dateRegistered: Date,
+    val price : Double
 )

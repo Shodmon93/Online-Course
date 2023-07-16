@@ -6,17 +6,10 @@ import androidx.room.PrimaryKey
 import com.example.donish.model.consts.Const.COURSE_ID
 import com.example.donish.model.consts.Const.INSTRUCTOR_ID
 
-@Entity(
-    foreignKeys = [ForeignKey(
-        entity = Course::class,
-        childColumns = [COURSE_ID],
-        parentColumns = [INSTRUCTOR_ID],
-        onDelete = ForeignKey.CASCADE
-    )]
-)
+@Entity()
 data class Instructor(
     @PrimaryKey(autoGenerate = true)
-    private val instructorId: Int = 0,
+    var instructorId: Int = 0,
     val firstName: String,
     val secondName: String,
     var courseId: Int = 1

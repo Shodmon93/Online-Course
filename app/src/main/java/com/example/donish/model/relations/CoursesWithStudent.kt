@@ -4,6 +4,7 @@ import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
 import com.example.donish.model.Course
+import com.example.donish.model.Enrollments
 import com.example.donish.model.Student
 import com.example.donish.model.consts.Const.COURSE_ID
 import com.example.donish.model.consts.Const.STUDENT_ID

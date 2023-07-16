@@ -5,7 +5,7 @@ import java.sql.Date
 
 data class Student(
     @PrimaryKey(autoGenerate = true)
-    val id : Int = 0,
+    val studentId : Int = 0,
     val firstName : String,
     val secondName : String,
     val age : Int,
